@@ -1,0 +1,192 @@
+1. /*
+            1 2 3 4 5
+            1 2 3 4 5              
+            1 2 3 4 5              
+            1 2 3 4 5
+            1 2 3 4 5
+*/
+
+#include<stdio.h>
+#include<conio.h>
+ 
+int main()
+{
+    int r;
+    char c;
+    for(r=1;r<=5;r++){
+        for(c=65;c<=69;c++){
+            printf("%c ",c);
+        }
+        printf("\n");
+    }
+
+ 
+    return 0;
+}
+--------------------------------------------------------------------
+
+2. 
+/*
+ZZZZZ
+YYYYY
+XXXXX
+WWWWW
+VVVVV
+*/
+
+#include<stdio.h>
+#include<conio.h>
+ 
+int main()
+{
+    int c;
+    char r  ;
+    for(r=90;r>=86;r--){
+        for(c=0;c<5;c++){
+            printf("%c ",r);
+        }
+        printf("\n");
+    }
+
+ 
+    return 0;
+}
+---------------------------------------------------------------------
+3.
+ /*
+A C E G I 
+I G E C A
+A C E G I
+I G E C A
+A C E G I 
+*/
+#include<stdio.h>
+#include<conio.h>
+ 
+int main()
+{
+    int r;
+    char c;
+    for(r=1;r<=5;r++){
+        if(r%2!=0){ 
+            for(c=65;c<=73;c=c+2){
+                printf("%c ",c);
+            }}
+
+        else{
+                for(c=73;c>=65;c=c-2){
+                printf("%c ",c);
+            }
+            
+        }
+        printf("\n");
+    }
+
+ 
+    return 0;
+}
+---------------------------------------------------------
+4./*
+xxxxx
+*****
+*****
+*****
+xxxxx
+*/
+#include<stdio.h>
+#include<conio.h>
+ 
+int main()
+{
+    int r,c;
+   
+    for(r=1;r<=5;r++){
+        if(r==1 || r==5){ 
+            for(c=1;c<=5;c++){
+                printf("x");
+            }}
+
+        else{
+                for(c=1;c<=5;c++){
+                printf("*");
+            }
+            
+        }
+        printf("\n");
+    }
+
+ 
+    return 0;
+}
+
+--------------------------------------------------------------
+5. /*
+xxxxx
+x***x
+x***x
+x***x
+xxxxx
+*/
+#include<stdio.h>
+#include<conio.h>
+ 
+int main()
+{
+    int r,c;
+   
+    for(r=1;r<=5;r++){
+        if(r==1 || r==5){ 
+            for(c=1;c<=5;c++){
+                printf("x");
+            }}
+
+        else{
+                for(c=1;c<=5;c++){
+                    if(c==1 || c==5){
+                        printf("x");
+                    }
+                
+                else{
+                printf("*");}
+            }
+            
+        }
+        printf("\n");
+    }
+
+ 
+    return 0;
+}
+-------------------------------------------------------
+6. /*
+1 2 3 4 5 
+5 4 3 2 1
+1 2 3 4 5
+5 4 3 2 1
+1 2 3 4 5
+*/
+#include<stdio.h>
+#include<conio.h>
+ 
+int main()
+{
+    int r,c;
+   
+    for(r=1;r<=5;r++){
+        if(r%2!=0){ 
+            for(c=1;c<=5;c++){
+                printf("%d ",c);
+            }}
+
+        else{
+                for(c=5;c>=1;c--){
+                printf("%d ",c);
+            }
+            
+        }
+        printf("\n");
+    }
+
+ 
+    return 0;
+}

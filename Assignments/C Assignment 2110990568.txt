@@ -1,0 +1,97 @@
+QUESTION 1
+
+#include<stdio.h>
+#include<conio.h>
+
+
+int main(){
+
+    int num1, num2, num3;
+    printf("Enter value of num1 : ");
+    scanf("%d",&num1);
+    printf("Enter value of num2 : ");
+    scanf("%d",&num2);
+    printf("Enter value of num3 : ");
+    scanf("%d",&num3);
+
+    if(num1 > num2 && num2 > num3){
+        printf("%d", num1);
+    }
+    else if(num2 > num1 && num1 > num3){
+        printf("%d", num2);
+    }
+    else if(num3 > num1 && num1 > num2){
+        printf("%d", num3);
+    }
+    else if(num1 == num2 && num1 > num3){
+        printf("%d", num1);
+        printf("\n%d", num2);
+    }
+    else if(num3 == num2 && num3 > num1)
+    {
+        printf("%d", num2);
+        printf("\n%d", num3);
+    }
+    else if(num1 == num3 && num1 > num2){
+        printf("%d", num1);
+        printf("\n%d", num3);
+    }
+
+    return 0;
+}
+
+
+
+//-----------------------------------------------------------------------------------------
+
+
+QUESTION 2
+
+
+#include <stdio.h>
+#include <conio.h>
+
+int main()
+{
+    int a, b, c, d, e, total;
+    float per;
+
+    printf("Enter your marks : ");
+    scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
+
+    total = a + b + c + d + e;
+
+    printf("\ntotal marks is %d\n", total);
+
+    per = total * 100 / (5.0 * 100);
+
+    printf("percent is %f\n", per);
+
+    if (per > 91)
+        printf("O Grade");
+    else
+    {
+        if (per >= 81 && per <= 90)
+            printf("A+ Grade");
+        else
+        {
+            if (per >= 71 && per <= 80)
+                printf("A Grade");
+            else
+            {
+                if (per >= 61 && per <= 70)
+                    printf("B Grade");
+                else
+                {
+                    if(per >= 51 && per <= 60)
+                        printf("C Grade");
+                    else
+                    {
+                        printf("Fail");
+                    }
+                }
+                    
+            }
+        }
+    }
+}
