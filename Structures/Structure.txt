@@ -1,0 +1,38 @@
+/*                 STRUCTURES
+
+1. Strucutre is a user defined datatype. 
+2. It is created with using "struct" keyword. 
+
+*/
+
+#include<stdio.h>
+#include<conio.h>
+
+struct employee
+{
+    int empid;
+    char empname[20];
+    float empsalary;
+};
+ 
+int main()
+{   
+    struct employee ref;
+
+    printf("Enter employee id = ");
+    scanf("%d",&ref.empid);
+    printf("Enter employee name = ");
+    fflush(stdin);
+    gets(ref.empname);
+    printf("\nEnter employee salary = ");
+    scanf("%d",&ref.empsalary);
+
+    printf("\n\n-------Employee detalis----------- \n\n");
+
+    printf("Employee id = %d",ref.empid);
+    printf("\nEmployee name = %s",ref.empname);
+    printf("\nEmployee salary = %f",ref.empsalary);
+
+    return 0;
+}
+
